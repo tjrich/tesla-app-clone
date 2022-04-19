@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 
 import styles from './styles'
 
@@ -11,19 +11,14 @@ const CarsList = (props) => {
     <View style={styles.container}>
         <FlatList
             data={cars}
-            renderItems={
+            renderItem={
                 ({item}) => 
                 <CarItem
                     car={item}
-                // name={item.name}
-                // tagline={item.tagline}
-                // taglineCTA={item.taglineCT}
-                // image={item.image}
                 />
             }
-            keyExtractor={(item, index) => index.toString()}
-        >
-        </FlatList>
+            keyExtractor={(item, index) => index+""}
+        />
     </View>
     )
 }
