@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, Dimensions } from 'react-native'
 
 import styles from './styles'
 
@@ -18,6 +18,10 @@ const CarsList = (props) => {
                 />
             }
             keyExtractor={(item, index) => index+""}
+            snapToAlignment={'start'}
+            decelerationRate={'fast'}
+            snapToInterval={Dimensions.get('window').height}
+            showsVerticalScrollIndicator={false}
         />
     </View>
     )
