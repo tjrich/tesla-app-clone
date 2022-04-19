@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TeslaClone",
-    "slug": "TeslaClone",
+    "name": "Tesla Clone",
+    "slug": "Tesla Clone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
